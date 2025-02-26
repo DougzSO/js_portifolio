@@ -1,0 +1,22 @@
+/* ==========================
+   🎨 VARIÁVEIS GLOBAIS 
+   ========================== */
+
+   :root {
+    /* 🎨 Cores */
+    --primary-color: #007bff;
+    --secondary-color: #333;
+    --bg-color: #f8f9fa;
+    --text-color: #222;
+    
+    /* 🔤 Tipografia */
+    --font-family: "Arial", sans-serif;
+
+    /* 📏 Espaçamentos */
+    --section-padding: 175px 20px;
+    --border-radius: 5px;
+
+    /* 🎬 Transições */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.7s ease;
+}

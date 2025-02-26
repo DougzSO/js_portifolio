@@ -1,0 +1,63 @@
+@import 'variable.css';
+
+/* ==========================
+   🌍 ESTILOS GLOBAIS
+   ========================== */
+
+/* 🔄 Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-family);
+    color: black;
+}
+
+/* 📄 Parágrafos */
+p {
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* 🔘 Botões */
+button {
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all var(--transition-medium);
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* 📝 Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+/* 🔗 Reset de listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
