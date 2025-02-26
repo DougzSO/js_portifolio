@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Douglas Silva - Portfolio</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <title>Douglas Silva de Oliveira - Electrical Engineer</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header>
+  <header role="banner">
     <nav role="navigation" aria-label="Main navigation">
       <div class="site-title">
-        <h1>Douglas Silva</h1>
+        <h1>Douglas Silva de Oliveira</h1>
       </div>
       <ul class="nav-links">
         <li><a href="#home" class="nav-link">Home</a></li>
@@ -24,62 +25,148 @@
   </header>
 
   <!-- Main Sections -->
-  <main>
+  <main role="main">
     <!-- Home Section -->
-    <section id="home" class="section">
-      <h2 class="section-title">Home</h2>
+    <section id="home" class="section" aria-labelledby="home-title">
+      <h2 id="home-title" class="section-title">Welcome to my Portifolio</h2>
       <div class="hero">
-        <h1>Douglas Silva</h1>
-        <p class="hero-intro">🔹Electrical Engineer | MSc in Energy Planning | FullStack Developer
-        </p>
+        <p class="hero-intro">Electrical Engineer and FullStack Developer passionate about developing and optmizing beautiful websites</p>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
-      <h2 class="section-title">About</h2>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">About Me</h2>
       <div class="about-content">
-        <p> I am an Electrical Engineer and Master’s student in Energy Planning at UFMG, passionate about energy systems, industrial automation, and data-driven solutions. My academic journey has been driven by a deep interest in renewable energy, optimization, and process automation, leading me to work on projects that combine engineering, software development, sustainability and energy planning.</p>
+        <p>I am an Electrical Engineer and Master’s student in Energy Planning at UFMG, passionate about energy systems, industrial automation, and data-driven solutions.</p>
+        <p>My academic journey has been driven by a deep interest in renewable energy, optimization, and process automation, leading me to work on projects that combine engineering, software development, sustainability, and energy planning.</p>
       </div>
+
+      <h2 id="skills-title" class="section-title">Skills</h2>
+  <div class="skills-container">
+    
+    <div class="skill-category">
+      <h3>Front-end</h3>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML5</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-react"></i> React.js</li>
+      </ul>
+    </div>
+    
+    <div class="skill-category">
+      <h3>Back-end</h3>
+      <ul>
+        <li><i class="fab fa-node-js"></i> Node.js</li>
+        <li><i class="fas fa-database"></i> MongoDB</li>
+        <li><i class="fas fa-server"></i> Express.js</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Tools</h3>
+      <ul>
+        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+        <li><i class="fas fa-code"></i> VSCode</li>
+        <li><i class="fas fa-terminal"></i> Linux</li>
+      </ul>
+    </div>
+    
+  </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>Description for project 1</p>
+    <section id="projects" class="section" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- Projeto 1 -->
+          <article class="project-card" role="article">
+            <div class="project-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <div class="project-buttons">
+              <a href="https://github.com/DougzSO/portfolio" target="_blank" class="btn">View on GitHub</a>
+            </div>
+          </article>
+          <!-- Projeto 2 -->
+          <article class="project-card" role="article">
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>COVID-19 Dashboard</h3>
+            <p>A React dashboard that fetches and visualizes COVID-19 data from Canada dynamically.</p>
+            <p><strong>Technologies:</strong> React, Chart.js, API</p>
+            <div class="project-buttons">
+              <a href="https://github.com/DougzSO/covid-dashboard" target="_blank" class="btn">View on GitHub</a>
+            </div>
+          </article>
+      <!-- Projeto 3 -->
+      <article class="project-card" role="article">
+        <div class="project-icon">
+            <i class="fa-solid fa-cloud-meatball"></i>
         </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>Description for project 2</p>
+        <h3>API Chillies</h3>
+        <p>Node.js application for an insert, update and remove page for chillies, using Express.js resources.</p>
+        <p><strong>Technologies:</strong> Express.js, Node.js, API RESTful</p>
+        <div class="project-buttons">
+          <a href="https://github.com/DougzSO/api-chillies" target="_blank" class="btn">View on GitHub</a>
         </div>
-      </div>
-    </section>
-
+      </article>
+    <!-- Projeto 4 -->
+      <article class="project-card" role="article">
+        <div class="project-icon">
+            <i class="fa-solid fa-gears"></i>
+        </div>
+        <h3>Node API Server</h3>
+        <p>Node.js application for responsive AI similar to ChatGPT, using Open AI and Express.js API resources.</p>
+        <p><strong>Technologies:</strong> Express.js, Node.js, OpenAI API</p>
+        <div class="project-buttons">
+          <a href="https://github.com/DougzSO/Node-API-Server" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </article>
+        </div>
+      </section>  
+      
     <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2 class="section-title">Contact</h2>
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact Me</h2>
       <div class="contact-content">
-        <form class="contact-form">
+        <form class="contact-form" role="form">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required aria-label="Enter your name">
           </div>
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required aria-label="Enter your email">
           </div>
           <div class="form-group">
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" required aria-label="Enter your message"></textarea>
           </div>
           <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="social-media-links">
+        <ul>
+            <li><a href="https://github.com/DougzSO" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/douglas-silva-a23b9b1b5/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Douglas Silva de Oliveira. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
