@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #333;
+    --bg-color: #f8f9fa;
+    --text-color: #222;
+    --font-family: "Arial", sans-serif;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 175px 20px;
+    background: var(--bg-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-family);
+    color: black;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Reset básico para remover estilos padrões */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estiliza a barra de navegação */
+.nav-links {
+    display: flex;  /* Coloca os itens lado a lado */
+    gap: 20px;  /* Espaçamento entre os itens */
+    padding: 10px 0;
+}
+
+/* Estiliza os links */
+.nav-link {
+    text-decoration: none;  /* Remove sublinhado */
+    color: var(--text-color);  /* Usa a cor do tema */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.nav-link:hover {
+    color: white;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Para telas menores (mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
